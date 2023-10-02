@@ -36,13 +36,14 @@ class ParticleSystem extends PIXI.Container {
 		super();
 		// Set start and duration for this effect in milliseconds
 		this.start    = 0;
-		this.duration = 15000;
+		this.duration = 4000;
 		this.allSprites = [];
 		this.lastTime = Date.now();
 		this.localTime = Date.now();
 		this.counter = 0;
 
 		// Create a particle cascade object
+		// setInterval(()=>{this.createAndAddSpriteCascade()}, 5000);
 		this.createAndAddSpriteCascade();
 	}
 
